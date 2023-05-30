@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catiuscia Centeno</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <button class="btn-1" id="btn-sol" onclick="btnSol()">Sol</button>
+                <button class="btn-1" id="btn-terra" onclick="btnTerra()">Terra</button>
+                <button class="btn-1" id="btn-lua" onclick="btnLua()">Lua</button>
+                <!-- <select name="" id="redes-social" class="btn-1">                     <option value="insta">Contato</option>
+                    <option value="">Github</option>
+                    <option value="">Linkedin</option>
+                    <option value="">Whatsapp</option>
+                    <option value="">Instagram</option>
+                </select>
+    -->
+            </div>
+        </nav>
+    </header>
+
+    <div class="pop-ups">
+        <div class="pop-up-lua">
+                <p>No mundo da lua mostro sobre desenvolvimento web.</p>
+        </div>
+    </div>
+
+    <div class="pop-ups">
+        <div class="pop-up-terra">
+                <p>Na Terra você descobre sobre mim.</p>
+        </div>
+    </div>
+
+    <div class="pop-ups">
+        <div class="pop-up-sol">
+                <p>No mundo do sol mostro sobre design.</p>
+        </div>
+    </div>
+
+    <div class="body">
+
+        <main class="principal">
+            <div class="secao-1">
+                <h1 class="titulo-princ"></h1>
+                <a href="terra.html">
+                    <div class="imagem-1">
+                        <img src="https://i.ibb.co/7NgshqR/planeta-terra.png" alt="" class="png-eclipse">
+                    </div>
+                </a>
+            </div>
+            <!-- ECLIPSE -->
+            <div class="eclipse">
+                <div class="sol">
+                    <a href="mundosol.html"><img src="https://i.ibb.co/qNPXzRP/sol.png" alt="sol" id="sol"></a>
+                </div>
+                <div class="lua">
+                    <a href="mundolua.html"><img src="https://i.ibb.co/2qdJtTR/lua.png" alt="" id="lua"></a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-conteudo">
+            <!-- <img src="eu.jpg" alt=""> -->
+            <div class="redes">
+                <ul>
+                    <li>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B55051998745666&text&type=phone_number&app_absent=0" target="_blank">
+                            <span></span><span></span><span></span><span></span>
+                            <span class="fa fawpp">
+                                <i class="fa-brands fa-whatsapp" style="color: #e4d4d4;"></i>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/catiuscia-centeno-682799238/" target="_blank">
+                            <span></span><span></span><span></span><span></span>
+                            <span class="fa falinkedin">
+                                <i class="fa-brands fa-linkedin" style="color: #e4d4d4;"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/cati.you/" target="_blank">
+                            <span></span><span></span><span></span><span></span>
+                            <span class="fa fainsta">
+                                <i class="fa-brands fa-instagram" style="color: #e4d4d4;"></i>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/CatiFullStack" target="_blank">
+                            <span></span><span></span><span></span><span></span>
+                            <span class="fa fagit">
+                                <i class="fa-brands fa-github" style="color: #e4d4d4;"></i>
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const msg = "Eu, Catiuscia Centeno";
+        let titulo = document.querySelector('.titulo-princ');
+        for (var i = 0; i < msg.length; i++) {
+            (function (pos) {
+
+                setTimeout(function () {
+                    titulo.innerHTML += msg.charAt(pos);
+                }, 140 * pos);
+            })(i);
+
+        }
+    </script>
+
+</body>
+
+</html>

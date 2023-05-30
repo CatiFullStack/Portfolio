@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url(https://i.ibb.co/gyssGB3/repeat.jpg);
+    color: #ccc;
+}
+
+main {
+    height: 80vh;
+}
+
+
+/* TITULO */
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.titulo h1 {
+    position: relative;
+    left: 60px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.titulo h2 {
+    position: relative;
+    top: 30px;
+    right: 40px;
+    font-size: 30px;
+    opacity: .6;
+    cursor: pointer;
+}
+
+/* SEÇÃO */
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.grade h2 {
+    color: #ccc;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.grade img {
+    width: 200px;
+    transform: skew(8deg, -3deg);
+    transition: 1s;
+}
+
+.grade img:hover {
+    transform: scale(1.8);
+    transform: skew(-12deg, 10deg);
+
+}
+
+
+/* FOOTER*/
+
+footer {
+    height: 25vh;
+    background-color: #2e2e2e;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.redes {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    transform: rotate(-3deg) skew(3deg);
+    transform-style: preserve-3d;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    width: 100%;
+    height: 10px;
+    background: #2a2a2a;
+    transform: skewX(-41deg);
+}
+
+ul li::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -9px;
+    width: 9px;
+    height: 100%;
+    background-color: #2a2a2a;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px !important;
+}
+
+ul li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    background: #2a2a2a;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px !important;
+}
+
+ul li:hover span {
+    z-index: 1000;
+    transition: .3s;
+    color: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+ul li:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+ul li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: .8;
+}
+
+ul li:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: .6;
+}
+
+ul li:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: .4;
+}
+
+ul li:hover span:nth-child(4) {
+    transform: translate(0px, 0px);
+    opacity: .2;
+}
+
+ul li:nth-child(1):hover span {
+    background: #cb52e1;
+}
+
+ul li:nth-child(2):hover span {
+    background: #2c3456;
+}
+
+ul li:nth-child(3):hover span {
+    background: #ea6e96;
+}
+ul li:nth-child(4):hover span {
+    background: #fceb00;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 768px) {
+
+  .grade {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .grade img {
+    width: 100px;
+  }
+}

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html, * {
+    padding: 0;
+    margin: 0;
+    
+}
+
+main {
+    height: 80vh;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto";
+    background: url(https://i.ibb.co/gyssGB3/repeat.jpg);
+    color: #ccc;
+}
+
+/* TITULO */
+
+div.titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.titulo-princ {
+    margin-top: 60px;
+    color: #70ffc1;
+    text-align: center;
+}
+
+.titulo-princ:after {
+    content: "";
+    position: relative;
+    border-right: 2px solid #70ffc1;
+
+    animation: piscar 700ms linear infinite;
+}
+
+/* SEÇÃO-1 */
+
+div.animation {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+svg {
+    color: #ffff;
+    animation: foguete linear 3s infinite;
+    position: relative;
+}
+
+button.botao {
+    margin-top: 27%;
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    background-color: #70ffc1;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@keyframes foguete {
+    from {
+        transform: scale(1.1);
+    }
+    
+    to {
+        transform: scale(1.4);
+    }
+}
+/* 
+@keyframes foguete {
+    0% {
+    left: 50px;
+    transform: rotate(50deg);
+    top: 20%;
+    }
+
+    25% {
+        left: 80px;
+        transform: rotate(70deg);
+        top: 20%;
+    }
+
+    50% {
+        left: 80px;
+        transform: rotate(100deg);
+        top: 20%;
+    }
+
+    75% {
+        left: 80px;
+        transform: rotate(120deg);
+        top: 20%;
+    }
+
+    100% {
+        left: 80px;
+        transform: rotate(160deg);
+        top: 20%;
+    }
+}
+
+@keyframes botao {
+    0% {
+        display: none;
+    }
+
+    25% {
+        display: none;
+    }
+
+    50% {
+        display: none;
+    }
+
+    75% {
+        display: none;
+    }
+
+    100% {
+        transform: scale(1.3);
+        display: block;
+    }
+} */
