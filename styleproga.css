@@ -113,7 +113,6 @@ div.descricao p {
 }
 
 .aparecer-php {
-    margin-top: 8%;
     margin-left: 10%;
     margin-right: 10%;
     display: none;
@@ -138,7 +137,6 @@ div.descricao p {
 }
 
 .aparecer-css {
-    margin-top: 8%;
     margin-left: 10%;
     margin-right: 10%;
     display: none;
@@ -163,7 +161,6 @@ div.descricao p {
 }
 
 .aparecer-js {
-    margin-top: 8%;
     margin-left: 10%;
     margin-right: 10%;
     display: none;
@@ -333,5 +330,6 @@ ul li:nth-child(4):hover span {
     .aparecer img {
         width: 80px;
     }
+    
 
 }
